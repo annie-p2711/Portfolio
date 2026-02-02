@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anne Pham | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container nav">
+      <div class="logo">Anne Pham</div>
+      <nav class="links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="tag">Accounting & Business Analytics</p>
+      <h1>Hi, I’m Anne 👋</h1>
+      <p class="sub">
+        I build clear, data-driven insights from financial information—combining
+        accounting fundamentals with analytics to support better decisions.
+      </p>
+
+      <div class="btnrow">
+        <a class="btn primary" href="projects.html">View Projects</a>
+        <a class="btn" href="contact.html">Contact</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>What I do</h3>
+        <p>Financial analysis, modeling, dashboards, and structured reporting.</p>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <p>Excel, SQL (learning), Power BI/Tableau (optional), Google Sheets.</p>
+      </div>
+      <div class="card">
+        <h3>Currently</h3>
+        <p>Building portfolio projects + preparing for internships.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Anne Pham</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
