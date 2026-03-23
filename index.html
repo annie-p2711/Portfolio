@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anne Pham | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="topbar">
-    <div class="container nav">
+  <header class="navbar">
+    <div class="container nav-content">
       <div class="logo">Anne Pham</div>
-      <nav class="links">
-        <a href="index.html" class="active">Home</a>
+      <nav>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="resume.html">Resume</a>
@@ -21,45 +21,41 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <p class="tag">Accounting & Business Analytics</p>
-      <h1>Hi, I’m Anne 👋</h1>
-      <p class="sub">
-        I build clear, data-driven insights from financial information—combining
-        accounting fundamentals with analytics to support better decisions.
-      </p>
+  <main>
+    <section class="hero container">
+      <a href="about.html">
+        <img src="profile.jpg" alt="Photo of Anne Pham" class="profile-pic">
+      </a>
 
-      <div class="btnrow">
-        <a class="btn primary" href="projects.html">View Projects</a>
-        <a class="btn" href="contact.html">Contact</a>
+      <div class="hero-text">
+        <p class="tagline">Accounting & Business Analytics Student</p>
+        <h1>Hi, I’m Annie Pham </h1>
+        <p>
+          I’m passionate about financial analysis, business problem-solving, and using data
+          to support better decisions. I created this portfolio to showcase my academic work,
+          projects, and experiences as I grow in accounting and business analytics.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="projects.html" class="btn primary-btn">View Projects</a>
+          <a href="contact.html" class="btn secondary-btn">Contact Me</a>
+        </div>
       </div>
     </section>
 
-    <section class="grid">
-      <div class="card">
-        <h3>What I do</h3>
-        <p>Financial analysis, modeling, dashboards, and structured reporting.</p>
-      </div>
-      <div class="card">
-        <h3>Tools</h3>
-        <p>Excel, SQL (learning), Power BI/Tableau (optional), Google Sheets.</p>
-      </div>
-      <div class="card">
-        <h3>Currently</h3>
-        <p>Building portfolio projects + preparing for internships.</p>
+    <section class="home-gallery container">
+      <h2>Highlights</h2>
+      <div class="gallery-grid">
+        <img src="campus.jpg" alt="Campus or professional photo" class="gallery-img">
+        <img src="project1.png" alt="Project preview" class="gallery-img">
+        <img src="project2.png" alt="Project preview" class="gallery-img">
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Anne Pham</p>
-    </div>
+    <p>© 2026 Anne Pham | Portfolio</p>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
