@@ -228,13 +228,20 @@ nav a:hover {
 }
 
 .contact-card-top {
-  height: 120px;
+  height: 140px;
   border-radius: 16px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.contact-img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  display: block;
 }
 
 .pink-card {
