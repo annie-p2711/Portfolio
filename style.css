@@ -180,3 +180,103 @@ nav a:hover {
   border: none;
   border-radius: 10px;
 }
+.contact-page {
+  padding: 60px 20px 80px;
+}
+
+.contact-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-tag {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #1f2b5c;
+  border: 1px solid #1f2b5c;
+  padding: 6px 12px;
+  border-radius: 999px;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.contact-hero h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.contact-subtext {
+  color: #6b7280;
+  font-size: 18px;
+}
+
+/* 🔥 KEY PART (2 cards centered) */
+.two-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  width: 300px;
+  background: white;
+  border-radius: 18px;
+  padding: 0 20px 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.contact-card-top {
+  height: 120px;
+  border-radius: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pink-card {
+  background: #f6d8d2;
+}
+
+.purple-card {
+  background: #efd2f5;
+}
+
+.contact-icon {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.contact-card h2 {
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-outline {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1.5px solid #1b1b5d;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  color: #1b1b5d;
+  background: white;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: #f3f4f6;
+}
