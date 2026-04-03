@@ -2,27 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Contact | Anne Pham</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Annie Pham</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="projects.html">Projects</a>
-  <a href="resume.html">Resume</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">Annie Pham</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-  <h1>Contact</h1>
-  <p>Email: phamq2@mail.uc.edu</p>
-  <p>
-    LinkedIn:
-    <a href="https://www.linkedin.com/">View Profile</a>
-  </p>
-</main>
+  <main class="container contact-page">
+    <section class="contact-hero">
+      <p class="contact-tag">CONTACT</p>
+      <h1>Get in touch with me</h1>
+      <p class="contact-subtext">
+        Feel free to reach out for opportunities, networking, or questions.
+      </p>
+    </section>
+
+    <section class="contact-cards two-cards">
+
+      <!-- LinkedIn -->
+      <div class="contact-card">
+        <div class="contact-card-top pink-card">
+          <div class="contact-icon">in</div>
+        </div>
+        <h2>LinkedIn</h2>
+        <p class="contact-info">linkedin.com/in/--phamquynhanh/</p>
+
+        <div class="contact-buttons">
+          <a href="https://www.linkedin.com/in/--phamquynhanh/" target="_blank" class="btn-outline">
+            Open LinkedIn
+          </a>
+
+          <button onclick="copyText('https://www.linkedin.com/in/--phamquynhanh/')" class="btn-outline">
+            Copy Link
+          </button>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="contact-card">
+        <div class="contact-card-top purple-card">
+          <div class="contact-icon">@</div>
+        </div>
+        <h2>Email</h2>
+        <p class="contact-info">quynhanh271106@gmail.com</p>
+
+        <div class="contact-buttons">
+          <a href="mailto:quynhanh271106@gmail.com" class="btn-outline">
+            Send Email
+          </a>
+
+          <button onclick="copyText('quynhanh271106@gmail.com')" class="btn-outline">
+            Copy Email
+          </button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Annie Pham | Portfolio</p>
+  </footer>
+
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Copied: " + text);
+      });
+    }
+  </script>
 
 </body>
 </html>
